@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "ARCL",
   description: "ARCL Website",
+  viewport: {
+    width: "device-width",
+    initialScale: 1.0,
+  },
 };
 
 export default function RootLayout({ children }) {

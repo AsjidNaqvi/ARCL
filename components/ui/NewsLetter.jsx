@@ -71,33 +71,20 @@ export const ContactForm = () => {
           </div>
           <div>
             <label
-              htmlFor="subject"
+              htmlFor="phone number"
               className="block text-sm font-medium text-gray-700 mb-2"
             >
-              Subject
+              Phone No.
             </label>
             <Input
               id="subject"
               type="text"
-              placeholder="How can we help?"
+              placeholder="Phone No."
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
-          <div>
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-gray-700 mb-2"
-            >
-              Message
-            </label>
-            <Textarea
-              id="message"
-              placeholder="Your message"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 min-h-[150px]"
-              required
-            />
-          </div>
+
           <Button
             type="submit"
             className="w-full bg-blue-950 hover:bg-blue-800 text-white py-3 px-6 rounded-lg text-lg font-semibold transition-all duration-300"

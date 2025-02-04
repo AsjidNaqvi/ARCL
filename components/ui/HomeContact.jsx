@@ -55,30 +55,16 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <label
-                    htmlFor="subject"
+                    htmlFor="phone number"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    Subject
+                    Phone No.
                   </label>
                   <Input
-                    id="subject"
+                    id="phone number"
                     type="text"
-                    placeholder="How can we help?"
+                    placeholder="Enter You Number Here."
                     className="w-full"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Your message"
-                    className="w-full min-h-[100px]"
                     required
                   />
                 </div>

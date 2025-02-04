@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -19,7 +18,6 @@ const Navbar = () => {
       setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
       setLastScrollY(currentScrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -40,9 +38,9 @@ const Navbar = () => {
       initial={{ y: "-100%", opacity: 0 }}
       animate={controls}
       transition={{ type: "spring", stiffness: 80 }}
-      className="bg-white text-blue-950 py-2 fixed top-0 w-full z-50 shadow-md"
+      className="bg-white text-blue-950 py-2 fixed top-0 left-0 right-0 z-50 shadow-md"
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo and Title */}
         <Link href="/" className="flex items-center">
           <Image
@@ -52,11 +50,11 @@ const Navbar = () => {
             height={70}
             className="object-cover"
           />
-          <div className="ml-2 font-nunito">
-            <h1 className="flex items-center text-lg font-bold leading-tight space-x-1">
+          <div className="ml-2 font-nunito hidden sm:block">
+            <h1 className="text-base sm:text-lg font-bold leading-tight">
               Autism Resource
             </h1>
-            <h2 className="flex items-center text-lg font-bold leading-tight space-x-1">
+            <h2 className="text-base sm:text-lg font-bold leading-tight">
               Centre Lahore
             </h2>
           </div>
@@ -103,11 +101,10 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex space-x-6 text-lg font-bold font-nunito">
+        <div className="hidden lg:flex space-x-4 text-base sm:text-lg font-bold font-nunito">
           <Link href="/" className="hover:text-blue-300">
             Home
           </Link>
-
           <Link href="/AboutUs" className="block hover:text-blue-300">
             About
           </Link>
@@ -151,7 +148,6 @@ const Navbar = () => {
             <Link href="/" className="block hover:text-blue-300">
               Home
             </Link>
-
             <Link href="/AboutUs" className="block hover:text-blue-300">
               About
             </Link>
@@ -167,7 +163,6 @@ const Navbar = () => {
             <Link href="/Admissions" className="block hover:text-blue-300">
               Admissions
             </Link>
-
             <Link href="/DonateNow" className="block">
               <Button
                 variant="destructive"
