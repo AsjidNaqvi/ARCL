@@ -62,27 +62,27 @@ const AboutUs = () => {
 
   const executiveMembers = [
     {
-      imageSrc: "/team-1.jpg",
+      imageSrc: "/mehwish.jpg",
       name: "Syeda Mahwish Raees",
       position: "Director",
     },
     {
-      imageSrc: "/team-1.jpg",
+      imageSrc: "/iqra.jpg",
       name: "Iqra Ashraf",
       position: "Assistant Director",
     },
     {
-      imageSrc: "/team-1.jpg",
+      imageSrc: "/sahar.jpg",
       name: "Syeda Saher Shoaib",
       position: "Associate Director",
     },
     {
-      imageSrc: "/team-1.jpg",
+      imageSrc: "/laiba.jpg",
       name: "Laiba Iqbal",
       position: "Accounts Manager",
     },
     {
-      imageSrc: "/team-1.jpg",
+      imageSrc: "/shaina.jpg",
       name: "Shaina Safdar",
       position: "Administrator and HR Head",
     },
